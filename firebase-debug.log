@@ -1,0 +1,7 @@
+[debug] [2021-11-17T19:33:34.486Z] ----------------------------------------------------------------------
+[debug] [2021-11-17T19:33:34.489Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mikel\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-11-17T19:33:34.490Z] CLI Version:   9.11.0
+[debug] [2021-11-17T19:33:34.490Z] Platform:      win32
+[debug] [2021-11-17T19:33:34.490Z] Node Version:  v16.13.0
+[debug] [2021-11-17T19:33:34.502Z] Time:          Wed Nov 17 2021 21:33:34 GMT+0200 (שעון ישראל (חורף))
+[debug] [2021-11-17T19:33:34.503Z] ----------------------------------------------------------------------
