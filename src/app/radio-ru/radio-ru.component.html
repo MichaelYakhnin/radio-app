@@ -3,8 +3,8 @@
     <div class="player" *ngIf="src">
       <div class="audio" >
         <audio-player [src]="src.Src" type="audio/mpeg" showStateLabel="true" autoplay="true"></audio-player>
-        <!-- <audio class="audio" controls="controls" autoplay>
-          <source type="audio/mpeg" src="{{src[1]}}">
+        <!-- <audio class="audio" type="audio/mpeg" src="{{src.Src}}" controls="controls" autoplay>
+         
         </audio> -->
       </div>
       <div class="radio-station">{{src.Title}}</div>
@@ -24,7 +24,7 @@
         <a href="javascript:void(0)" (click)="play(i)">
           <div class="station-container">
             <div class="station-image">
-              <img src="assets/msk/images/{{item.Name}}.gif" alt="{{item.Title}}" title="{{item.Title}}" />
+              <img src="assets/msk/images/{{item.Image}}" alt="{{item.Title}}" title="{{item.Title}}" />
             </div>
             <div class="station-name">
               {{item.Title}}

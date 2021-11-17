@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import radioStRu from '../msk.json';
-import {GetStationService} from './get-station.service';
 
 
 @Component({
@@ -9,10 +8,10 @@ import {GetStationService} from './get-station.service';
   styleUrls: ['./radio-ru.component.scss']
 })
 export class RadioRuComponent implements OnInit {
-  public stationList:{Title:string, Genre:string,Src: string}[] = radioStRu;
+  public stationList:{Name:string, Title:string, Src: string,Image: string}[] = radioStRu;
   src: any;
   favorities: any[] = [];
-  constructor(private getStationService: GetStationService) { }
+  constructor() { }
 
   ngOnInit(): void {
 
@@ -24,28 +23,18 @@ export class RadioRuComponent implements OnInit {
  
    play(id):void {
      this.src = '';
-    // this.src = this.getSrcById(id);
- 
-    setTimeout(() => this.src = this.getSrcById(id), 50);
+     //this.src = this.getSrcById(id);
+    setTimeout(() => this.src = this.getSrcById(id), 100);
    }
-   async getSrcById(id): Promise<any> {
+   getSrcById(id): any {
      let st = this.stationList[id];
-     st.Src = await this.getSrc(st.Src);
+     
      return st;
    }
-   async addToFavorities(id): Promise<void> {
-     const st = await this.getSrcById(id);
-    this.favorities.push({path: 'assets/msk/images/' + st.Name + '.gif', id: id});
+   addToFavorities(id): void {
+     const st = this.getSrcById(id);
+    this.favorities.push({path: 'assets/msk/images/' + st.Image, id: id});
      localStorage.setItem('stationsRu',JSON.stringify(this.favorities));
    }
-   getType(src: string): string{
-     return src.includes("m3u") ? "audio/mpegURL":"audio/mpeg";
-   } 
-   async getSrc(src: string): Promise<string>{
-     if(src && src.includes("m3u")){
-      let st = await this.getStationService.getStation(src).toPromise();
-      return st;
-     } 
-     return src;
-    }
+
  }
