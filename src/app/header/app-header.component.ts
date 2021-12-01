@@ -7,10 +7,15 @@ import { Component } from '@angular/core';
 })
 
 export class AppHeaderComponent{
-
+  headerTitles = ['Radio Israel','Radio  Москва'];
+  index = 0;
   navbarOpen = false;
 
-  toggleNavbar() {
+  toggleNavbar(path: string) {
     this.navbarOpen = !this.navbarOpen;
+    if(path){
+        if(path.includes('ru')) this.index = 1;
+        if(path.includes('is')) this.index = 0;
+    }
   }
 }
