@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="#">
-        Radio/TV Israel
+        Radio Israel
     </a>
     <button class="navbar-toggler" type="button"
             (click)="toggleNavbar()">
@@ -10,10 +10,10 @@
          [ngClass]="{ 'show': navbarOpen }">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/radio" routerLinkActive="active">Radio</a>
+          <a class="nav-link" routerLink="/radio" routerLinkActive="active" (click)="toggleNavbar()">Radio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/radio-ru" routerLinkActive="active">Radio Москва</a>
+          <a class="nav-link" routerLink="/radio-ru" routerLinkActive="active" (click)="toggleNavbar()">Radio Москва</a>
         </li>       
       </ul>
     </div>
