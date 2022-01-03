@@ -2,7 +2,7 @@ export const RadioSt = [
     ['60','https://radio.streamgates.net/stream/galil','רדיו קול הגליל העליון 105.3FM'],
     ['23','https://radio.streamgates.net/stream/KOLREGA','רדיו קול רגע'],
     ['50','http://sweb.co.il:7777/;','רדיו לב הפסגה'],
-    ['45','https://acdn.streamgates.net/891fm','Первое радио 89.1FM'],
+    ['45','https://cdn.cybercdn.live/Pervoia/Audio/icecast.audio','Первое радио 89.1FM'],
     ['46','http://194.153.101.160:8000/idc123.mp3','הרדיו הבינתחומי'],
     ['19','http://106fm.livecdn.biz:7075/;stream.mp3','קול הקמפוס 106FM'],
     ['58','http://hyades.shoutca.st:8735/;','רדיו רנסאנס'],
