@@ -1,0 +1,39 @@
+
+<div class="header">
+    <div class="player" *ngIf="src">
+      <div class="audio" >
+        <audio-player [src]="src.Src" type="audio/mpeg" showStateLabel="true" autoplay="true"></audio-player>
+        <!-- <audio class="audio" type="audio/mpeg" src="{{src.Src}}" controls="controls" autoplay>
+
+        </audio> -->
+      </div>
+      <div class="radio-station">{{src.Title}}</div>
+    </div>
+    <div class="favorities-container" *ngIf="favorities.length > 0">
+      <div *ngFor="let station of favorities">
+        <div class="cell">
+          <img [src]="station.path" (click)="play(station.id)" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="list-container" [style.padding-top]="favorities.length > 0 ? '200px' : '90px'">
+    <ul class="list">
+      <li *ngFor="let item of stationList;index as i">
+        <a href="javascript:void(0)" (click)="play(i)">
+          <div class="station-container">
+            <div class="station-image">
+              <img src="assets/ukr/{{item.Image}}" alt="{{item.Title}}" title="{{item.Title}}" />
+            </div>
+            <div class="station-name">
+              {{item.Title}}
+            </div>
+            <div class="add-favorite">
+              <a href="javascript:void(0)" (click)="addToFavorities(i)">Добавить в избранные</a>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </div>

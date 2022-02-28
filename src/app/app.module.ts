@@ -9,7 +9,7 @@ import {RadioPlayerComponent} from './radio/radio-player.component';
 import {AppHeaderComponent} from './header/app-header.component';
 import { AudioComponent } from './audio/audio-component/audio-component.component';
 import { RadioRuComponent } from './radio-ru/radio-ru.component';
-
+import { RadioUkrComponent } from './radio-ukr/radio-ukr.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +18,12 @@ import { RadioRuComponent } from './radio-ru/radio-ru.component';
     AppHeaderComponent,
 
     AudioComponent,
-    RadioRuComponent
+    RadioRuComponent,
+    RadioUkrComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule  
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
