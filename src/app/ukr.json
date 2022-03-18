@@ -16,5 +16,11 @@
        "Title": "Retro FM",
        "Src": "https://cast.radiogroup.com.ua/retro",
        "Image": "retrofm.png"
-      }
+      },
+      {
+        "Name": "ArmyFM",
+        "Title": "ArmyFM",
+        "Src": "https://icecast.armyfm.com.ua:8443/ArmyFM",
+        "Image": "ArmyFM.png"
+       }
 ]
