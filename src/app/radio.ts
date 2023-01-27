@@ -10,7 +10,7 @@ export const RadioSt = [
     ['35','https://radio.streamgates.net/stream/netanya','רדיו קול נתניה 106FM'],
     ['70','http://radio.ilcast.com:8000/live','RADIO 69FM'],
     ['53','http://cp11.livecdn.biz/radiodance_aac','radioDANCE'],
-    ['73','https://a1.streamgates.net/TheBest/live/playlist.m3u8','Лучшее Радио'],
+    ['73','https://cdna.streamgates.net/TheBest/live/playlist.m3u8','Лучшее Радио'],
     ['56','http://185.80.220.12:8047/stream','רדיו רן (פרסית)'],
     ['2','https://radio.streamgates.net/stream/90fm','רדיו תשעים'],
     ['68','http://radio.eretz.fm/eretz-mp3','רדיו ארץ'],
