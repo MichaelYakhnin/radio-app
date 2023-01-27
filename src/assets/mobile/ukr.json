@@ -28,5 +28,11 @@
          "Title": "Громадське радіо",
          "Src": "https://hromadske.radio/radio_https_upstream",
          "Image": "hromadske.png"
+        },
+       {
+         "Name": "relax",
+         "Title": "Radio Relax",
+         "Src": "https://online.radiorelax.ua/RadioRelax",
+         "Image": "relax_logo_slogan.png"
         }
 ]

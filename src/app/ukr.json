@@ -28,5 +28,23 @@
          "Title": "Громадське радіо",
          "Src": "https://hromadske.radio/radio_https_upstream",
          "Image": "hromadske.png"
-        }
+        },
+        {
+          "Name": "hitfm",
+          "Title": "Hit FM Ukraine",
+          "Src": "https://online.hitfm.ua/HitFM",
+          "Image": "hitfm.webp"
+         },
+         {
+           "Name": "relax",
+           "Title": "Radio Relax",
+           "Src": "https://online.radiorelax.ua/RadioRelax",
+           "Image": "relax_logo_slogan.png"
+          },
+          {
+            "Name": "KissFM",
+            "Title": "Kiss FM",
+            "Src": "http://online.kissfm.ua/KissFM_HD",
+            "Image": "kissfm_bigger_logo_top.png"
+           }
 ]

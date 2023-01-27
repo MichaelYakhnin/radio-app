@@ -21,7 +21,7 @@ li{
     background-color: cornflowerblue;
     position: fixed;
     width: 100%;
-    margin-top: 55px;
+    margin-top: 64px;
 }
 
 .player{
@@ -41,6 +41,8 @@ li{
 }
 .station-image{
     padding: 10px;
+    background-color: rgb(43, 220, 226);
+    border-radius:40px
 }
 .add-favorite{
     padding: 20px;
@@ -61,12 +63,16 @@ li{
 .cell img{
     border-radius: 30px;
     padding: 5px;
+    height: 50px;
+    background-color: rgb(43, 220, 226);
 }
 .station-image img{
   width: 50px;
 }
-@media only screen and (max-width: 600px) {
-    .audio{
-        width: 150px;
-    }
-  }
+
+// @media only screen and (max-width: 600px) {
+//     .audio{
+//         width: 150px;
+//     }
+//   }
+

@@ -10,7 +10,7 @@ import { RadioSt} from '../radio';
 export class RadioPlayerComponent implements OnInit {
 
   radioStations = RadioSt;
-  src: any;
+  src: any[]=[];
   stImages: any[] = [];
 
   constructor() { }
@@ -24,16 +24,13 @@ export class RadioPlayerComponent implements OnInit {
   }
 
   play(id):void {
-    this.src = '';
-    this.src = this.getSrcById(id);
-
-    //setTimeout(() => this.src = this.getSrcById(id), 50);
+    setTimeout(() => this.src = this.getSrcById(id), 50);
   }
   getSrcById(id): any {
     return this.radioStations[id];
   }
   addToFavorities(id): void {
-    this.stImages.push({path: 'assets/images/small/' + this.getSrcById(id)[0] + '.jpg', id: id});
+    this.stImages.push({path: 'assets/isr/' + this.getSrcById(id)[0] + '.jpg', id: id});
     localStorage.setItem('stations',JSON.stringify(this.stImages));
   }
 }

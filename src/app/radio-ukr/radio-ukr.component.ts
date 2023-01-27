@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import radioStRu from '../ukr.json';
-
+import {Station} from '../models/station';
 
 @Component({
   selector: 'app-radio-ukr',
@@ -9,7 +9,7 @@ import radioStRu from '../ukr.json';
 })
 export class RadioUkrComponent implements OnInit {
   public stationList:{Name:string, Title:string, Src: string,Image: string}[] = radioStRu;
-  src: any;
+  src: Station = new Station();
   favorities: any[] = [];
   constructor() { }
 
@@ -22,8 +22,6 @@ export class RadioUkrComponent implements OnInit {
    }
 
    play(id):void {
-     this.src = '';
-     //this.src = this.getSrcById(id);
     setTimeout(() => this.src = this.getSrcById(id), 100);
    }
    getSrcById(id): any {

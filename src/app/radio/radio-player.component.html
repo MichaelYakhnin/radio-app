@@ -1,10 +1,7 @@
 <div class="header">
-  <div class="player" *ngIf="src">
+  <div class="player" >
     <div class="audio">
       <audio-player src="{{src[1]}}" showStateLabel="true" autoplay="true"></audio-player>
-      <!-- <audio class="audio" controls="controls" autoplay>
-        <source type="audio/mpeg" src="{{src[1]}}">
-      </audio> -->
     </div>
     <div class="radio-station">{{src[2]}}</div>
   </div>
