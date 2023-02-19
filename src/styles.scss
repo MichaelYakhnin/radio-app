@@ -70,9 +70,9 @@ li{
   width: 50px;
 }
 
-// @media only screen and (max-width: 600px) {
-//     .audio{
-//         width: 150px;
-//     }
-//   }
+@media only screen and (max-width: 1024px) {
+    .station-name{
+      font-size: xx-large;
+    }
+  }
 
