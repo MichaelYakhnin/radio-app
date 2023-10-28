@@ -34,5 +34,9 @@ export class RadioUkrComponent implements OnInit {
     this.favorities.push({path: 'assets/ukr/' + st.Image, id: id});
      localStorage.setItem('stationsUkr',JSON.stringify(this.favorities));
    }
+   clear(){
+    this.favorities = [];
+    localStorage.setItem('stationsUkr',JSON.stringify(this.favorities));
+  }
 
  }

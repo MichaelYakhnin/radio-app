@@ -33,5 +33,9 @@ export class RadioPlayerComponent implements OnInit {
     this.stImages.push({path: 'assets/isr/' + this.getSrcById(id)[0] + '.jpg', id: id});
     localStorage.setItem('stations',JSON.stringify(this.stImages));
   }
+  clear(){
+    this.stImages = [];
+    localStorage.setItem('stations',JSON.stringify(this.stImages));
+  }
 }
 

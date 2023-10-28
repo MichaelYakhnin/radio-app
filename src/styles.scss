@@ -70,6 +70,14 @@ li{
   width: 50px;
 }
 
+.clear-favorities{
+    border: 2px solid rgb(255, 0, 4);
+    border-radius: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 1024px) {
     .station-name{
       font-size: xx-large;

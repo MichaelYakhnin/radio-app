@@ -3,7 +3,8 @@
     <div class="audio">
       <audio-player src="{{src[1]}}" showStateLabel="true" autoplay="true"></audio-player>
     </div>
-    <div class="radio-station">{{src[2]}}</div>
+    <div class="radio-station ml-2">{{src[2]}}</div>
+    <div class="clear-favorities ml-2" (click)="clear()">Clear favorites</div>
   </div>
   <div class="favorities-container" *ngIf="stImages.length > 0">
     <div *ngFor="let station of stImages">
