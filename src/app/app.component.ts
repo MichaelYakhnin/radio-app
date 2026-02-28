@@ -1,9 +1,14 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
+import{AppHeaderComponent} from './header/app-header.component';
+
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  standalone: true,
+  imports: [CommonModule, RouterOutlet,AppHeaderComponent],
+  templateUrl: "./app.component.html",
 })
 export class AppComponent {
   title = 'radio-app';

@@ -1,50 +1,42 @@
 [
-    {
-        "Name": "radionv",
-        "Title": "Radio NV",
-        "Src": "http://91.218.212.84:8000/radionv.mp3",
-        "Image": "radionv.png"
-    },
-    {
-      "Name": "kievfm",
-      "Title": "Kyiv FM",
-      "Src": "http://194.183.170.29:8012/stream/1/",
-      "Image": "kievfm.png"
-     },
-     {
-       "Name": "retrofm",
-       "Title": "Retro FM",
-       "Src": "https://cast.radiogroup.com.ua/retro",
-       "Image": "retrofm.png"
-      },
-      {
-        "Name": "KrainaFM",
-        "Title": "KrainaFM",
-        "Src": "http://185.65.246.132:8000/kiev128s.mp3",
-        "Image": "KrainaFM.png"
-       },
-       {
-         "Name": "hromadske",
-         "Title": "Громадське радіо",
-         "Src": "https://hromadske.radio/radio_https_upstream",
-         "Image": "hromadske.png"
-        },
-        {
-          "Name": "hitfm",
-          "Title": "Hit FM Ukraine",
-          "Src": "https://online.hitfm.ua/HitFM",
-          "Image": "hitfm.webp"
-         },
-         {
-           "Name": "relax",
-           "Title": "Radio Relax",
-           "Src": "https://online.radiorelax.ua/RadioRelax",
-           "Image": "relax_logo_slogan.png"
-          },
-          {
-            "Name": "KissFM",
-            "Title": "Kiss FM",
-            "Src": "http://online.kissfm.ua/KissFM_HD",
-            "Image": "kissfm_bigger_logo_top.png"
-           }
+  {
+    "id": "1",
+    "name": "Radio NV",
+    "url": "http://91.218.212.84:8000/radionv.mp3"
+  },
+  {
+    "id": "2",
+    "name": "Kyiv FM",
+    "url": "http://194.183.170.29:8012/stream/1/"
+  },
+  {
+    "id": "3",
+    "name": "Retro FM",
+    "url": "https://cast.radiogroup.com.ua/retro"
+  },
+  {
+    "id": "4",
+    "name": "KrainaFM",
+    "url": "http://185.65.246.132:8000/kiev128s.mp3"
+  },
+  {
+    "id": "5",
+    "name": "Громадське радіо",
+    "url": "https://hromadske.radio/radio_https_upstream"
+  },
+  {
+    "id": "6",
+    "name": "Hit FM Ukraine",
+    "url": "https://online.hitfm.ua/HitFM"
+  },
+  {
+    "id": "7",
+    "name": "Radio Relax",
+    "url": "https://online.radiorelax.ua/RadioRelax"
+  },
+  {
+    "id": "8",
+    "name": "Kiss FM",
+    "url": "http://online.kissfm.ua/KissFM_HD"
+  }
 ]

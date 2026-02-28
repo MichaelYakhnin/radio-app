@@ -1,0 +1,38 @@
+[
+    {
+        "Name": "radionv",
+        "Title": "Radio NV",
+        "Src": "http://91.218.212.84:8000/radionv.mp3",
+        "Image": "radionv.png"
+    },
+    {
+      "Name": "kievfm",
+      "Title": "Kyiv FM",
+      "Src": "http://194.183.170.29:8012/stream/1/",
+      "Image": "kievfm.png"
+     },
+     {
+       "Name": "retrofm",
+       "Title": "Retro FM",
+       "Src": "https://cast.radiogroup.com.ua/retro",
+       "Image": "retrofm.png"
+      },
+      {
+        "Name": "KrainaFM",
+        "Title": "KrainaFM",
+        "Src": "http://185.65.246.132:8000/kiev128s.mp3",
+        "Image": "KrainaFM.png"
+       },
+       {
+         "Name": "hromadske",
+         "Title": "Громадське радіо",
+         "Src": "https://hromadske.radio/radio_https_upstream",
+         "Image": "hromadske.png"
+        },
+       {
+         "Name": "relax",
+         "Title": "Radio Relax",
+         "Src": "https://online.radiorelax.ua/RadioRelax",
+         "Image": "relax_logo_slogan.png"
+        }
+]

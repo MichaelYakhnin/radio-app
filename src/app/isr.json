@@ -1,0 +1,367 @@
+[
+    {
+      "id": "60",
+      "url": "https://radio.streamgates.net/stream/galil",
+      "name": "רדיו קול הגליל העליון 105.3FM"
+    },
+    {
+      "id": "23",
+      "url": "https://radio.streamgates.net/stream/KOLREGA",
+      "name": "רדיו קול רגע"
+    },
+    {
+      "id": "50",
+      "url": "http://sweb.co.il:7777/;",
+      "name": "רדיו לב הפסגה"
+    },
+    {
+      "id": "45",
+      "url": "https://cdn.cybercdn.live/Pervoia/Audio/icecast.audio",
+      "name": "Первое радио 89.1FM"
+    },
+    {
+      "id": "46",
+      "url": "http://194.153.101.160:8000/idc123.mp3",
+      "name": "הרדיו הבינתחומי"
+    },
+    {
+      "id": "19",
+      "url": "http://106fm.livecdn.biz:7075/;stream.mp3",
+      "name": "קול הקמפוס 106FM"
+    },
+    {
+      "id": "58",
+      "url": "http://hyades.shoutca.st:8735/;",
+      "name": "רדיו רנסאנס"
+    },
+    {
+      "id": "30",
+      "url": "http://uk2-vn.mixstream.net:8004/stream/1/",
+      "name": "רדיו קול השלום"
+    },
+    {
+      "id": "35",
+      "url": "https://radio.streamgates.net/stream/netanya",
+      "name": "רדיו קול נתניה 106FM"
+    },
+    {
+      "id": "70",
+      "url": "http://radio.ilcast.com:8000/live",
+      "name": "RADIO 69FM"
+    },
+    {
+      "id": "53",
+      "url": "http://cp11.livecdn.biz/radiodance_aac",
+      "name": "radioDANCE"
+    },
+    {
+      "id": "73",
+      "url": "https://cdna.streamgates.net/TheBest/live/playlist.m3u8",
+      "name": "Лучшее Радио"
+    },
+    {
+      "id": "56",
+      "url": "http://185.80.220.12:8047/stream",
+      "name": "רדיו רן (פרסית)"
+    },
+    {
+      "id": "2",
+      "url": "https://radio.streamgates.net/stream/90fm",
+      "name": "רדיו תשעים"
+    },
+    {
+      "id": "68",
+      "url": "http://radio.eretz.fm/eretz-mp3",
+      "name": "רדיו ארץ"
+    },
+    {
+      "id": "33",
+      "url": "http://sweb.co.il:8008/;",
+      "name": "רדיו חולמים מזרחית"
+    },
+    {
+      "id": "43",
+      "url": "https://radio.streamgates.net/stream/1036",
+      "name": "קול רמת השרון"
+    },
+    {
+      "id": "14",
+      "url": "https://audio-darom.ecast.co.il/darom97fm",
+      "name": "רדיו דרום"
+    },
+    {
+      "id": "38",
+      "url": "http://84.94.229.99:5998/;",
+      "name": "רדיו חוף אילת"
+    },
+    {
+      "id": "7",
+      "url": "https://eco-live.mediacast.co.il/99fm_aac",
+      "name": "רדיו 99FM"
+    },
+    {
+      "id": "3",
+      "url": "https://acdn.streamgates.net/91fm",
+      "name": "רדיו לב המדינה"
+    },
+    {
+      "id": "1",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_88.mp3?dist=coolsite",
+      "name": "כאן 88"
+    },
+    {
+      "id": "27",
+      "url": "https://radio.streamgates.net/stream/eilat",
+      "name": "רדיו קול הים האדום"
+    },
+    {
+      "id": "5",
+      "url": "https://acdn.streamgates.net/100fm",
+      "name": "רדיוס 100FM"
+    },
+    {
+      "id": "54",
+      "url": "http://www.breslav.co.il:5555/;",
+      "name": "רדיו ברסלב - קול הנחל"
+    },
+    {
+      "id": "61",
+      "url": "http://178.63.110.13:37600/stream",
+      "name": "רדיו רוח מזרחית"
+    },
+    {
+      "id": "57",
+      "url": "https://ssl.shoutcaststreaming.us:8061/;",
+      "name": "רדיו המזרח"
+    },
+    {
+      "id": "32",
+      "url": "https://radio.streamgates.net/stream/kinneret",
+      "name": "רדיו קול הכנרת"
+    },
+    {
+      "id": "26",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_KOL_HAMUSICA.mp3?dist=coolsite",
+      "name": "כאן קול המוסיקה"
+    },
+    {
+      "id": "36",
+      "url": "http://770tv.no-ip.org:7777/;",
+      "name": "רדיו מבשר טוב"
+    },
+    {
+      "id": "55",
+      "url": "https://icecast.myradio.co.il/livegreece",
+      "name": "רדיו כחול יוון"
+    },
+    {
+      "id": "47",
+      "url": "https://audio-darom.ecast.co.il/darom101",
+      "name": "רדיו דרום 101.5"
+    },
+    {
+      "id": "10",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_BET.mp3?dist=coolsite",
+      "name": "כאן ב"
+    },
+    {
+      "id": "71",
+      "url": "https://radio.streamgates.net/stream/1036kh",
+      "name": "רדיו קול השפלה"
+    },
+    {
+      "id": "62",
+      "url": "https://radio.streamgates.net/stream/1045fm",
+      "name": "רדיו צפון 104.5"
+    },
+    {
+      "id": "4",
+      "url": "https://102.livecdn.biz/102fm_mp3",
+      "name": "רדיו תל אביב 102FM"
+    },
+    {
+      "id": "21",
+      "url": "http://media2.93fm.co.il/live",
+      "name": "רדיו קול חי"
+    },
+    {
+      "id": "59",
+      "url": "http://kzradio.mediacast.co.il/kzradio_live/kzradio/icecast.audio",
+      "name": "רדיו הקצה"
+    },
+    {
+      "id": "18",
+      "url": "https://media-ssl.musicradio.com/ClassicFM",
+      "name": "Classic FM"
+    },
+    {
+      "id": "67",
+      "url": "https://securestreams2.autopo.st:1242/live",
+      "name": "BeatFM"
+    },
+    {
+      "id": "39",
+      "url": "https://radio.streamgates.net/stream/sol",
+      "name": "רדיו סול"
+    },
+    {
+      "id": "75",
+      "url": "https://icecast.myradio.co.il/zerock",
+      "name": "רדיו זה רוק"
+    },
+    {
+      "id": "11",
+      "url": "http://1075.livecdn.biz/radiohaifa",
+      "name": "רדיו חיפה"
+    },
+    {
+      "id": "66",
+      "url": "https://liveradio.co.il/wet",
+      "name": "רדיו מרטיט מיתר בלב"
+    },
+    {
+      "id": "65",
+      "url": "http://radio.ilcast.com:8052/;",
+      "name": "רדיו קול עכו"
+    },
+    {
+      "id": "29",
+      "url": "https://audio-darom.ecast.co.il/live",
+      "name": "רדיו גלי ישראל"
+    },
+    {
+      "id": "74",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_REKA.mp3?dist=coolsite",
+      "name": "כאן רקע"
+    },
+    {
+      "id": "44",
+      "url": "http://cuead.cdnwiz.com/cuead-109fmmp3-64",
+      "name": "רדיו 109FM"
+    },
+    {
+      "id": "64",
+      "url": "http://streaming.radionomy.com/GoldRadioIsraelOfficiel",
+      "name": "GOLD Radio Israel"
+    },
+    {
+      "id": "52",
+      "url": "http://gb35.streamgates.net/ariel106fm/audio/icecast.audio",
+      "name": "רדיו קול אחר 106FM"
+    },
+    {
+      "id": "6",
+      "url": "http://glzwizzlv.bynetcdn.com/glz_mp3",
+      "name": "גלי צהל"
+    },
+    {
+      "id": "69",
+      "url": "http://sweb.co.il:8014/;stream.mp3",
+      "name": "רדיו חנה"
+    },
+    {
+      "id": "37",
+      "url": "http://listen.clickfm.co.il/1FM",
+      "name": "רדיו 1FM"
+    },
+    {
+      "id": "42",
+      "url": "http://icecast.kab.tv/heb.mp3",
+      "name": "רדיו קבלה FM"
+    },
+    {
+      "id": "40",
+      "url": "http://radio-yasoo.ath.cx:7500/;",
+      "name": "רדיו יאסו"
+    },
+    {
+      "id": "48",
+      "url": "https://diki.mediacast.co.il/diki",
+      "name": "רדיו שירי דיכאון"
+    },
+    {
+      "id": "24",
+      "url": "https://rs.mizrahit.fm:7777/;",
+      "name": "רדיו נושמים מזרחית"
+    },
+    {
+      "id": "8",
+      "url": "http://glzwizzlv.bynetcdn.com/glglz_mp3",
+      "name": "גלגלצ"
+    },
+    {
+      "id": "51",
+      "url": "https://rdm.mediacast.co.il:7777/radiom",
+      "name": "רדיו מזרחית"
+    },
+    {
+      "id": "31",
+      "url": "https://radio.streamgates.net/stream/kbmusic",
+      "name": "רדיו קול ברמה"
+    },
+    {
+      "id": "17",
+      "url": "https://yamfm.mediacast.co.il/yamfm?type=.mp3",
+      "name": "רדיו קליק לים התיכון"
+    },
+    {
+      "id": "16",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_GIMMEL.mp3?dist=coolsite",
+      "name": "כאן גימל"
+    },
+    {
+      "id": "15",
+      "url": "https://radio.streamgates.net/stream/hatahana",
+      "name": "רדיו התחנה 101.5"
+    },
+    {
+      "id": "20",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_MORESHET.mp3?dist=coolsite",
+      "name": "כאן מורשת"
+    },
+    {
+      "id": "13",
+      "url": "http://www.menta-fm.co.il:8888/",
+      "name": "רדיו קול המזרח"
+    },
+    {
+      "id": "9",
+      "url": "https://acdn.streamgates.net/103fm",
+      "name": "רדיו 103"
+    },
+    {
+      "id": "41",
+      "url": "https://eol-live.cdnwiz.com/eol/eolsite/icecast.audio",
+      "name": "רדיו מהות החיים"
+    },
+    {
+      "id": "28",
+      "url": "https://playerservices.streamtheworld.com/api/livestream-redirect/KAN_TARBUT.mp3?dist=coolsite",
+      "name": "כאן תרבות"
+    },
+    {
+      "id": "25",
+      "url": "https://radio.streamgates.net/stream/101fm",
+      "name": "רדיו ירושלים"
+    },
+    {
+      "id": "63",
+      "url": "https://ice66.securenetsystems.net/CJRT?playSessionID=DE5AE27F-E75A-A794-60CE6AAFACB933A1",
+      "name": "Jazz FM"
+    },
+    {
+      "id": "12",
+      "url": "https://liveradio.co.il/radiolove",
+      "name": "רדיו שירי אהבה"
+    },
+    {
+      "id": "34",
+      "url": "http://freeuk3.listen2myradio.com:18186/;",
+      "name": "רדיו קול המרכז"
+    },
+    {
+      "id": "49",
+      "url": "http://www.radio-beat.com/server1",
+      "name": "רדיו ביט"
+    }
+  ]

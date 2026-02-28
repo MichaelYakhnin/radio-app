@@ -1,36 +1,102 @@
-<div class="header">
-  <div class="player" >
-    <div class="audio">
-      <audio-player src="{{src[1]}}" showStateLabel="true" autoplay="true"></audio-player>
-    </div>
-    <div class="radio-station ml-2">{{src[2]}}</div>
-    <div class="clear-favorities ml-2" (click)="clear()">Clear favorites</div>
-  </div>
-  <div class="favorities-container" *ngIf="stImages.length > 0">
-    <div *ngFor="let station of stImages">
-      <div class="cell">
-        <img [src]="station.path" (click)="play(station.id)" />
+<div class="container py-3 mt-5">
+  <div class="row align-items-center">
+    <div class="col-12 col-md-8">
+      <div class="audio p-3 rounded shadow-lg bg-gradient">
+        @if (src() != null && !src().url.includes('m3u8')) {
+          <audio-player 
+            [src]="src().url" 
+            [showStateLabel]="true" 
+            [autoplay]="true"
+            class="w-100 fade-in"
+            (error)="handleAudioError($event)"
+          ></audio-player>
+        }
+        @if (src() != null && src().url.includes('m3u8')) {
+          <app-audio-player [streamUrl]="src().url"
+          [showStateLabel]="true" 
+            [autoplay]="true"
+            class="w-100 fade-in"
+            (error)="handleAudioError($event)"></app-audio-player>
+        }
       </div>
     </div>
+
+    @if (src()!= null) {
+      <div class="col-12 col-md-4 text-md-right text-center mt-2 mt-md-0">
+        <span class="badge bg-primary pulse">{{src().name}}</span>
+      </div>
+    }
   </div>
+
+  @if (stImages().length > 0) {
+    <div class="mt-3 d-flex justify-content-between align-items-center">
+      <button 
+        class="btn btn-danger" 
+        (click)="clear()"
+        aria-label="Clear all favorites"
+      >
+        Clear favorites
+      </button>
+    </div>
+
+    <div class="mt-3" [ngClass]="favoritesVisible ? 'favorites-visible' : 'favorites-hidden'">
+      <div class="row" role="list" aria-label="Favorite stations">
+        @for (station of stImages(); track station.id) {
+          <div class="col-6 col-md-2 text-center mb-2 fade-in" role="listitem">
+            <img 
+              class="img-fluid rounded shadow-sm hover-scale favorite-icon" 
+              [src]="station.path" 
+              (click)="play(station.id)" 
+              [alt]="'Play station ' + station.id"
+              loading="lazy"
+              style="max-width: 100px; height: auto; cursor: pointer;"
+              (error)="handleImageError($event)"
+            />
+          </div>
+        } @empty {
+          <div class="col-12 text-center">No favorite stations added yet</div>
+        }
+      </div>
+    </div>
+  }
 </div>
 
-<div class="list-container" [style.padding-top]="stImages.length > 0 ? '200px' : '90px'">
-  <ul class="list">
-    <li *ngFor="let item of radioStations;index as i">
-      <a href="javascript:void(0)" (click)="play(i)">
-        <div class="station-container">
-          <div class="station-image">
-            <img src="assets/isr/{{item[0]}}.jpg" alt="{{item[2]}}" title="{{item[2]}}" />
-          </div>
-          <div class="station-name">
-            {{item[2]}}
-          </div>
-          <div class="add-favorite">
-            <a href="javascript:void(0)" (click)="addToFavorities(i)">Добавить в избранные</a>
-          </div>
+<div class="container mt-4">
+  <ul class="list-group list-group-flush radio-list" role="list">
+    @for (item of radioStations; track $index) {
+      <li class="list-group-item radio-item" role="listitem">
+        <div class="d-flex align-items-center">
+          <img 
+            class="radio-img" 
+            [src]="'assets/'+ routeParam + '/'+ item.id + (routeParam=='isr'?'.jpg':'.png')" 
+            [alt]="item.name" 
+            [title]="item.name"
+            loading="lazy"
+            (error)="handleImageError($event)"
+          />
+          <span class="radio-title">{{item.name}}</span>
         </div>
-      </a>
-    </li>
+
+        <div class="d-flex">
+          <button 
+            class="btn btn-primary btn-sm pulse-hover play-btn" 
+            (click)="play($index)"
+            [attr.aria-label]="'Play ' + item.name"
+          >
+            ▶ Play
+          </button>
+          <button 
+            class="btn btn-outline-success btn-sm pulse-hover favorite-btn" 
+            (click)="addToFavorities($index)"
+            [attr.aria-label]="'Add ' + item.name + ' to favorites'"
+          >
+            ⭐ Favorite
+          </button>
+        </div>
+      </li>
+    } @empty {
+      <li class="list-group-item text-center">No radio stations available</li>
+    }
   </ul>
 </div>
+

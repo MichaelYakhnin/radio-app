@@ -1,7 +1,63 @@
-<audio #audioElement controls src="{{src}}" type="audio/mpeg">
-  <p>Your browser does not support HTML5 audio. Here is a <a href="{{src}}">link</a> instead.</p>
-</audio>
-<!-- <span (click)="paused ? play() : pause()" class="icon-align-middle">
-  <div *ngIf="paused" class="icon-size-30">></div>
-  <div *ngIf="!paused" class="icon-size-30">||</div>
-</span> -->
+<div class="audio-player">
+  <audio #audioElement [src]="src">
+    @if (type) {
+      <source [src]="src" [type]="type">
+    }
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="controls">
+    @if (paused) {
+      <button 
+        (click)="play()" 
+        class="play-button"
+        [disabled]="audioState().status === 'loading'"
+        aria-label="Play">
+        @if (audioState().status === 'loading') {
+          Loading...
+        } @else {
+          Play
+        }
+      </button>
+    } @else {
+      <button 
+        (click)="pause()" 
+        class="pause-button"
+        aria-label="Pause">
+        Pause
+      </button>
+    }
+
+    <div class="progress-bar" 
+         role="progressbar" 
+         [attr.aria-valuenow]="progress()"
+         aria-valuemin="0"
+         aria-valuemax="100">
+      <div class="progress" [style.width.%]="progress()"></div>
+    </div>
+
+    <div class="time-display">
+      <span class="current-time">{{timeDisplay()}}</span>
+      <!-- <span class="duration">{{durationDisplay()}}</span> -->
+    </div>
+
+    <div class="volume-control">
+      <input 
+        type="range" 
+        [value]="volume" 
+        (input)="setVolume(getTarget($event.target).value)"
+        min="0" 
+        max="1" 
+        step="0.1"
+        aria-label="Volume">
+    </div>
+  </div>
+
+  @if (showStateLabel) {
+    <div class="state-label" 
+         [class.error]="audioState().status === 'error'"
+         aria-live="polite">
+      {{ audioStateLabel() }}
+    </div>
+  }
+</div>

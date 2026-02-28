@@ -62,7 +62,6 @@ export const RadioSt = [
     ['17','https://yamfm.mediacast.co.il/yamfm?type=.mp3','רדיו קליק לים התיכון'],
     ['16','https://kanliveicy.media.kan.org.il/icy/kangimmel_mp3?providername=coolsite','כאן גימל'],
     ['15','https://radio.streamgates.net/stream/hatahana','רדיו התחנה 101.5'],
-    //['22','https://cdna.streamgates.net/Ashams/Live/icecast.audio','רדיו א-שמס - الشمس'],
     ['20','https://kanliveicy.media.kan.org.il/icy/kanmoreshet_mp3?providername=coolsite','כאן מורשת'],
     ['13','http://www.menta-fm.co.il:8888/','רדיו קול המזרח'],
     ['9','https://acdn.streamgates.net/103fm','רדיו 103'],
@@ -70,7 +69,6 @@ export const RadioSt = [
     ['28','https://kanliveicy.media.kan.org.il/icy/kantarbut_mp3?providername=coolsite','כאן תרבות'],
     ['25','https://radio.streamgates.net/stream/101fm','רדיו ירושלים'],
     ['63','https://ice66.securenetsystems.net/CJRT?playSessionID=DE5AE27F-E75A-A794-60CE6AAFACB933A1','Jazz FM'],
-    //['72','http://5.153.20.163:9300/;','רדיו אלגבל-راديو الجبل'],
     ['12','https://liveradio.co.il/radiolove','רדיו שירי אהבה'],
     ['34','http://freeuk3.listen2myradio.com:18186/;','רדיו קול המרכז'],
     ['49','http://www.radio-beat.com/server1','רדיו ביט']
