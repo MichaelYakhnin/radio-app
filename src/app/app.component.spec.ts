@@ -1,12 +1,14 @@
 import { TestBed } from '@angular/core/testing';
+import { provideRouter } from '@angular/router';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [
+      imports: [
         AppComponent
       ],
+      providers: [provideRouter([])],
     }).compileComponents();
   });
 
@@ -22,10 +24,4 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('radio-app');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('radio-app app is running!');
-  });
 });

@@ -13,7 +13,7 @@ import {
   DestroyRef,
   inject
 } from '@angular/core';
-import { CommonModule } from '@angular/common';
+
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject, fromEvent } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
@@ -28,7 +28,7 @@ interface AudioState {
   templateUrl: './audio-component.component.html',
   styleUrls: ['./audio-component.component.scss'],
   standalone: true,
-  imports: [CommonModule]
+  imports: []
 })
 export class AudioComponent implements AfterViewInit, OnDestroy {
   @Input({ required: true }) src!: string;

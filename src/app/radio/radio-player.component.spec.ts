@@ -1,4 +1,5 @@
 import { NO_ERRORS_SCHEMA } from "@angular/core";
+import { provideRouter } from "@angular/router";
 import { RadioPlayerComponent } from "./radio-player.component";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
@@ -10,8 +11,9 @@ describe("RadioPlayerComponent", () => {
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
       providers: [
+        provideRouter([])
       ],
-      declarations: [RadioPlayerComponent]
+      imports: [RadioPlayerComponent]
     });
 
     fixture = TestBed.createComponent(RadioPlayerComponent);

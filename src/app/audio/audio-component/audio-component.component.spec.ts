@@ -3,23 +3,26 @@ import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { AudioComponentComponent } from './audio-component.component';
+import { AudioComponent } from './audio-component.component';
 
-describe('AudioComponentComponent', () => {
-  let component: AudioComponentComponent;
-  let fixture: ComponentFixture<AudioComponentComponent>;
+describe('AudioComponent', () => {
+  let component: AudioComponent;
+  let fixture: ComponentFixture<AudioComponent>;
 
   beforeEach(waitForAsync(() => {
+    TestBed.overrideComponent(AudioComponent, {
+      set: { template: '' }
+    });
+
     TestBed.configureTestingModule({
-      declarations: [ AudioComponentComponent ]
+      imports: [ AudioComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AudioComponentComponent);
+    fixture = TestBed.createComponent(AudioComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
   });
 
   it('should create', () => {

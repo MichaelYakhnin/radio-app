@@ -1,4 +1,5 @@
 import { NO_ERRORS_SCHEMA } from "@angular/core";
+import { provideRouter } from "@angular/router";
 import { AppHeaderComponent } from "./app-header.component";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
@@ -10,8 +11,9 @@ describe("AppHeaderComponent", () => {
     TestBed.configureTestingModule({
       schemas: [NO_ERRORS_SCHEMA],
       providers: [
+        provideRouter([])
       ],
-      declarations: [AppHeaderComponent]
+      imports: [AppHeaderComponent]
     });
 
     fixture = TestBed.createComponent(AppHeaderComponent);

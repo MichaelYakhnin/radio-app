@@ -17,11 +17,7 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "target": "es2015",
-    "module": "ES2022",
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "module": "ES2022"
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

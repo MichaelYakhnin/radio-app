@@ -25,7 +25,7 @@ interface AudioState {
   standalone: true, // Marked as standalone
   imports: [],      // No direct Angular Module dependencies to import in this case
   templateUrl: './audio-player.component.html',
-  styleUrls: ['./audio-player.component.css']
+  styleUrls: ['./audio-player.component.scss']
 })
 export class AudioPlayerComponent implements AfterViewInit, OnDestroy {
   @Input() streamUrl: string | null = null;
